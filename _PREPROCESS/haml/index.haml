@@ -1,3 +1,23 @@
-%html
+!!!
+%html{'data-ng-app' => ''}
+  %head
+    %meta{:charset => 'utf-8'}
+    %meta{'http-equiv' => "X-UA-Compatible", :content => "IE=edge,chrome=1"}
+    %meta{ :name => 'description', :content => '' }
+    %meta{:name => 'author', :content => 'FQ400'}
+
+
+    %meta{ :name => "viewport", :content => "width=device-width, initial-scale=1, maximum-scale=1"}
+
+    %title
+      Bootstrap by FQ400
+
+    %link{:rel => 'stylesheet', :href => './stylesheets/application.css'}
+    %script{:src => './javascripts/angular.min.js'}
+    %script{:src => './javascriptss/application.js'}
   %body
-    123
+    %div{'data-ng-controller' => 'FooController'}
+      %p{'data-ng-model' => 'foo'}
+        {{foo.bar}}
+      .test
+        TEST
