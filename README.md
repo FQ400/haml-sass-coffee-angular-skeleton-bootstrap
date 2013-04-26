@@ -4,7 +4,7 @@ haml-sass-coffee-angular-twitter-bootstrap
 needed coffeescript, sass, haml, filewatcher
 
 
-inside DO_NOT_DEPLOY
+inside _PREPROCESS
 
 watcher
 
