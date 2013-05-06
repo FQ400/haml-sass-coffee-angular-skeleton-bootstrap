@@ -1,0 +1,28 @@
+// Note: Design for a width of 768px
+
+@media only screen and (min-width: 768px) and (max-width: 959px)
+  .container
+    width: 768px
+    .column, .columns
+      margin-left: 10px
+      margin-right: 10px
+
+    // Base Grid
+    $column-width: 28
+    $column-increment-amt: 48
+    +set-columns($column-width, $column-increment-amt)
+
+    // Offsets
+    $offset-padding: 48
+    $offset-increment-amt: 48
+    +set-offsets($offset-padding, $offset-increment-amt)
+
+  .column.alpha, .columns.alpha
+    margin-left: 0
+    margin-right: 10px
+  .column.omega, .columns.omega
+    margin-right: 0
+    margin-left: 10px
+  .alpha.omega
+    margin-left: 0
+    margin-right: 0

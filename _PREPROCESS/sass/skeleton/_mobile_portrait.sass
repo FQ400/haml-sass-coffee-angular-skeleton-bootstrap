@@ -1,0 +1,20 @@
+// Note: Design for a width of 320px
+
+@media only screen and (max-width: 767px)
+  .container
+    width: 300px
+    .columns,.column
+      margin: 0
+
+    // Base Grid
+    $column-width: 300
+    $column-increment-amt: 0
+    +set-columns($column-width, $column-increment-amt)
+    .one-third.column,
+    .two-thirds.column
+      width: #{$column-width}px
+
+    // Offsets
+    $offset-padding: 0
+    $offset-increment-amt: 0
+    +set-offsets($offset-padding, $offset-increment-amt)

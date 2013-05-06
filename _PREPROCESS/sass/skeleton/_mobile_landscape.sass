@@ -1,0 +1,15 @@
+// Note: Design for a width of 480px
+
+@media only screen and (min-width: 480px) and (max-width: 767px)
+  .container
+    width: 420px
+    .columns, .column
+      margin: 0
+
+    // Base Grid
+    $column-width: 420
+    $column-increment-amt: 0
+    +set-columns($column-width, $column-increment-amt)
+    .one-third.column,
+    .two-thirds.column
+      width: #{$column-width}px
