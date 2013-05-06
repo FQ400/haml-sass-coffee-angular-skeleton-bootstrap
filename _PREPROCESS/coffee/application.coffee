@@ -6,7 +6,6 @@ window.FooController = ($scope) ->
     bar: 'Example Text'
   }
 
-
   return
 
 window.FooController.$inject = ['$scope']
