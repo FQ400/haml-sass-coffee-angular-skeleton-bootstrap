@@ -1,2 +1,3 @@
 3h - setup environment from scratch
 2h - more setup stuff
+1h - fixed setup and added skeleton
