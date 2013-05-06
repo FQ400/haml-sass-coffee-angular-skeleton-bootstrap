@@ -8,7 +8,7 @@ inside _PREPROCESS
 
 watcher
 
-coffee --compile --watch --output ../js/ coffee/
+coffee --compile --watch --output ../javascripts/ coffee/
 
 sass --watch sass:../stylesheets --style compressed
 
